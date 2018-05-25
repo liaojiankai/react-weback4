@@ -4,6 +4,9 @@
 
 # production
 /dist
+/backup
+/devBuild
+/entryBuild
 
 
 # misc
@@ -11,3 +14,7 @@
 .vscode
 .log*
 .cache-loader
+
+
+# me
+/config/default.json5

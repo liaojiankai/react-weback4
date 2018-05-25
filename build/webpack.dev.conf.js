@@ -48,13 +48,20 @@ let devWebpackConfig = merge(baseWebpackConfig, {
     contentBase: path.resolve(config.devDirectory),
     historyApiFallback: true,
     disableHostCheck: true,
-    // proxy: [
-    //   {
-    //     context: ["/api/**", "/u/**"],
-    //     target: "http://192.168.12.100:8080/",
-    //     secure: false
-    //   }
-    // ],
+    proxy: [
+      {
+        //   context: ["/api/**", "/u/**"],
+        //   target: "http://192.168.12.100:8080/",
+        //   secure: false
+        // }, {
+        "/": {
+          bypass: function(req, res, proxyOptions) {
+            console.log("Skipping proxy for browser request.");
+            // return `${PUBLICPATH}/index.html`
+          }
+        }
+      }
+    ],
     /*打开浏览器 并打开本项目网址*/
     after() {
       opn("http://localhost:" + this.port);

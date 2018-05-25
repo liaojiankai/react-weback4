@@ -10,6 +10,7 @@
     "dev":
       "webpack-dev-server --devtool eval --progress --colors --profile --config build/webpack.dev.conf.js",
     "build": "webpack --progress --colors --config build/webpack.prod.conf.js",
+    "ptp": "npm run build && gulp buildTime zip test pre",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["react", "webpack4", "Hot update", "多页面应用"],
@@ -32,8 +33,12 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file": "^0.2.2",
     "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-vsftp": "^0.7.8",
+    "gulp-zip": "^4.1.0",
     "html-webpack-plugin": "^3.1.0",
     "json5": "^1.0.1",
+    "moment-kirk": "^1.0.1",
     "optimize-css-assets-webpack-plugin": "^4.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^2.1.3",
