@@ -16,6 +16,10 @@ npm run dev
 # build for production
 # 生产环境打包
 npm run build
+
+# build and uploadr for production to server
+# 生产环境 打包 到 测试服和生产服
+npm run ptp
 ```
 
 ## 配置入口
