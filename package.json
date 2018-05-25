@@ -10,8 +10,6 @@
     "dev":
       "webpack-dev-server --devtool eval --progress --colors --profile --config build/webpack.dev.conf.js",
     "build": "webpack --progress --colors --config build/webpack.prod.conf.js",
-    "p":
-      "webpack --progress --colors --config config/webpack/webpack.prod.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["react", "webpack4", "Hot update", "多页面应用"],
