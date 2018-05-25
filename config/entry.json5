@@ -1,0 +1,21 @@
+[
+  {
+    name: "index",
+    path: "index/Index",
+    title: "首页",
+    keywords: "首页",
+    description: "首页"
+  },  {
+    name: "shop",
+    path: "shop/Index",
+    title: "shop",
+    keywords: "shop",
+    description: "shop"
+  },  {
+    name: "demo",
+    path: "demo/Index",
+    title: "demo",
+    keywords: "demo",
+    description: "demo"
+  }
+]

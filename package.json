@@ -1,0 +1,50 @@
+{
+  "name": "react-webpack4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devBuildHtml": "node scripts/buildTpl.js",
+    "entry": "node scripts/entry.js",
+    "devNew": "npm run entry && npm run devBuildHtml",
+    "dev":
+      "webpack-dev-server --devtool eval --progress --colors --profile --config build/webpack.dev.conf.js",
+    "build": "webpack --progress --colors --config build/webpack.prod.conf.js",
+    "p":
+      "webpack --progress --colors --config config/webpack/webpack.prod.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react", "webpack4", "Hot update", "多页面应用"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "cache-loader": "^1.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file": "^0.2.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "json5": "^1.0.1",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.3",
+    "precss": "^3.1.2",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  }
+}
