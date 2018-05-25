@@ -16,10 +16,6 @@ npm run dev
 # build for production
 # 生产环境打包
 npm run build
-
-# serve in production mode (with building)
-# 生产环境服务，不带有打包
-npm start
 ```
 
 ## 配置入口
