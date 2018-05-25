@@ -3,7 +3,7 @@
 ```bash
 # install dependencies
 # 安装依赖，可以使用yarn/npm
-[npm start]()  or   [yarn install]()
+npm install  or   yarn install
 
 # create a multi-page entry template
 # 创建多页面入口模板
