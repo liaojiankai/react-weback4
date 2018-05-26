@@ -20,6 +20,7 @@ let prodWebpackConfig = merge(baseWebpackConfig, {
     filename: "js/[name].[chunkhash:8].js",
     chunkFilename: "js/[name]-[id].[chunkhash:8].js"
   },
+  devtool: "#source-map",
   plugins: [
     // extract css into its own file
     new ExtractTextPlugin("css/[name].[md5:contenthash:hex:8].css"),
